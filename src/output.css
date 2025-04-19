@@ -780,3 +780,22 @@
     }
   }
 }
+
+/* maindashboard*/
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Avatar border ring */
+.avatar-ring {
+  border: 2px solid #ccc;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+/* Optional: Styling for notification icon if needed */
+.fa-bell:hover {
+  color: #1d4ed8; /* Tailwind's blue-700 */
+}
+
