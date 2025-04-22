@@ -56,22 +56,12 @@
     </div>
   </aside>
 
-<!-- Sidebar Toggle Button -->
-<button id="openSidebar" class="md:hidden fixed top-4 left-4 z-[9999] bg-white p-2 rounded-md shadow-md">
-  ☰
-</button>
+
+  <button id="openSidebar" class="md:hidden fixed top-4 left-4 z-50 bg-white p-2 rounded-md shadow-md">
+    ☰
+  </button>
 
 
-  <!-- Main Content Area (iframe only changes) -->
-  <main class="flex-1 ml-0 p-0 h-screen z-40 relative">
-    <iframe
-      id="mainContent" 
-      src="../src/MainDash.html"
-      class="w-full h-full border-none"
-      frameborder="0"
-    ></iframe>
-  </main>
-  </main>
 
   <!-- Script for Sidebar and Page Loading -->
   <script>
@@ -88,12 +78,6 @@
     closeBtn.addEventListener("click", () => {
       sidebar.classList.add("-translate-x-full");
     });
-  
-    // Function to load new iframe content
-    function loadPage(pageUrl) {
-      document.getElementById('mainContent').src = pageUrl;
-    }
   </script>
-  
 </body>
 </html>
